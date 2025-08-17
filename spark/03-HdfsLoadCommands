@@ -1,0 +1,10 @@
+**********************************************
+hdfs load commands
+**********************************************
+ 
+# Load data
+$ hadoop fs -put formatProject/
+ 
+# Remove unnecessary files 
+$ hadoop fs -rm -R formatProject/formatConverterTextToSequence/
+$ hadoop fs -rm -R formatProject/formatConverterTextToMap/

@@ -1,0 +1,18 @@
+************************************************
+**Command to create sequence file from text file 
+************************************************
+
+$ hadoop jar formatProject/formatConverterTextToSequence/jars/formatConverterTextToSequence.jar FormatConverterTextToSequenceDriver formatProject/data/departments_sorted/part-m-00000 formatProject/data/departments_sequence
+.
+.
+.
+.
+
+$ hadoop fs -ls -R formatProject/data/departments_sequence | awk '{print $8}'
+formatProject/data/departments_sequence/_SUCCESS
+formatProject/data/departments_sequence/_logs
+formatProject/data/departments_sequence/_logs/history
+formatProject/data/departments_sequence/_logs/history/cdh-jt01_1376335706356_job_201308121428_0116_conf.xml
+formatProject/data/departments_sequence/_logs/history/job_201308121428_0116_1379087496898_akhanolk_Create+Sequence+File%2C+from+text+file
+formatProject/data/departments_sequence/part-m-00000
+

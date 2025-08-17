@@ -1,0 +1,13 @@
+**************************************************************
+** Compression and sequence files 
+
+**************************************************************
+To create an compressed sequence file - and block compression is the recommended option, there are just minor additions to code in the driver [formatProject/FormatConverterTextToSequence/src/FormatConverterTextToSequenceDriver.java] 
+The sample code here uses SnappyCodec, and block compression.
+
+FileOutputFormat.setCompressOutput(job, true);
+FileOutputFormat.setOutputCompressorClass(job, SnappyCodec.class);
+SequenceFileOutputFormat.setOutputCompressionType(job,CompressionType.BLOCK);
+
+The next section includes the code.
+

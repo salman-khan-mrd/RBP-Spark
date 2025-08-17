@@ -1,0 +1,27 @@
+01. Data and code download
+-----------------------------
+Google: 
+<<To be added>>
+ 
+Email me at airawat.blog@gmail.com if you encounter any issues
+ 
+gitHub:
+<<To be added>>
+ 
+ 
+Directory structure
+-------------------
+formatProject
+    data
+        departments_sorted
+          part-m-00000
+ 
+ 
+    formatConverterTextToSequence
+        src
+            FormatConverterMapper.java
+            FormatConverterTextToSequenceDriver.java
+            FormatConverterSequenceToTextDriver.java
+        jars
+            formatConverterTextToSequence.jar
+            formatConverterSequenceToText.jar

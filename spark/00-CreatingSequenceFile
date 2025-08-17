@@ -1,0 +1,16 @@
+This gist demonstrates how to create a sequence file (compressed and uncompressed), from a text file.
+ 
+Includes:
+---------
+1. Input data and script download
+2. Input data-review
+3. Data load commands                                
+4. Mapper code
+5. Driver code to create the sequence file out of a text file in HDFS
+6. Command to run Java program
+7. Results of the program run to create sequence file 
+8. Java program to read a sequence file, and convert to text file
+9. Command to run program from #8, with results
+10. Note on creating compressed sequence files
+11. Driver code to create a compressed sequence file
+12. Command to run program in #11 with results

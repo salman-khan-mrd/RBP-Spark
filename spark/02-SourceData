@@ -1,0 +1,14 @@
+**************************************************
+Input text file - departments_sorted/part-m-00000
+**************************************************
+ 
+$ more formatProject/data/departments_sorted/part-m-00000 
+d001  Marketing
+d002  Finance
+d003	Human Resources
+d004	Production
+d005	Development
+d006	Quality Management
+d007	Sales
+d008	Research
+d009	Customer Service

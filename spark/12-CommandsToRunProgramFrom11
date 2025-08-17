@@ -1,0 +1,32 @@
+*************************************************************************************
+**Command to create block compressed(snappy) sequence file from text file + output
+*************************************************************************************
+
+$ hadoop jar formatProject/formatConverterTextToSequence/jars/formatConverterTextToBlkCompSequence.jar FormatConverterTextToBlckCompSequenceDriver formatProject/data/departments_sorted/part-m-00000 formatProject/data/departments_sequence_blckcmp
+.
+
+$ hadoop fs -ls -R formatProject/data/departments_sequence_blckcmp | awk '{print $8}'
+formatProject/data/departments_sequence_blckcmp/_SUCCESS
+formatProject/data/departments_sequence_blckcmp/_logs
+formatProject/data/departments_sequence_blckcmp/_logs/history
+formatProject/data/departments_sequence_blckcmp/_logs/history/cdh-jt01_1376335706356_job_201308121428_0120_conf.xml
+formatProject/data/departments_sequence_blckcmp/_logs/history/job_201308121428_0120_1379091181653_akhanolk_Create+block+compressed+Sequence+File%2C+from+text+f
+formatProject/data/departments_sequence_blckcmp/part-m-00000
+
+
+$ hadoop fs -text formatProject/data/departments_sequence_blckcmp/part-m-00000
+13/09/13 11:55:38 INFO compress.CodecPool: Got brand-new decompressor [.snappy]
+13/09/13 11:55:38 INFO compress.CodecPool: Got brand-new decompressor [.snappy]
+13/09/13 11:55:38 INFO compress.CodecPool: Got brand-new decompressor [.snappy]
+13/09/13 11:55:38 INFO compress.CodecPool: Got brand-new decompressor [.snappy]
+0  d001	Marketing
+15	d002	Finance
+28	d003	Human Resources
+49	d004	Production
+65	d005	Development
+82	d006	Quality Management
+106	d007	Sales
+117	d008	Research
+131	d009	Customer Service
+
+

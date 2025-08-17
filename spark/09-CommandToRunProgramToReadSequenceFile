@@ -1,0 +1,25 @@
+**************************************************************
+**Command to create text file from sequence file & results 
+**************************************************************
+
+$ hadoop jar formatProject/formatConverterTextToSequence/jars/formatConverterSequenceToText.jar FormatConverterSequenceToTextDriver formatProject/data/departments_sequence/part-m-00000 formatProject/data/departments_text
+
+$ hadoop fs -ls -R formatProject/data/departments_text | awk '{print $8}'
+formatProject/data/departments_text/_SUCCESS
+formatProject/data/departments_text/_logs
+formatProject/data/departments_text/_logs/history
+formatProject/data/departments_text/_logs/history/cdh-jt01_1376335706356_job_201308121428_0118_conf.xml
+formatProject/data/departments_text/_logs/history/job_201308121428_0118_1379089420495_akhanolk_Convert+Sequence+File+and+Output+as+Text
+formatProject/data/departments_text/part-m-00000
+
+$ hadoop fs -cat formatProject/data/departments_text/part-m-00000
+0  d001	Marketing
+15	d002	Finance
+28	d003	Human Resources
+49	d004	Production
+65	d005	Development
+82	d006	Quality Management
+106	d007	Sales
+117	d008	Research
+131	d009	Customer Service
+

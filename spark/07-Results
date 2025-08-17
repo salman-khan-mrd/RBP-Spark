@@ -1,0 +1,14 @@
+************************************************
+**Results 
+************************************************
+
+$ hadoop fs -text formatProject/data/departments_sequence/part-m-00000
+0  d001	Marketing
+15	d002	Finance
+28	d003	Human Resources
+49	d004	Production
+65	d005	Development
+82	d006	Quality Management
+106	d007	Sales
+117	d008	Research
+131	d009	Customer Service
